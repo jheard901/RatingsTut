@@ -6,6 +6,12 @@
 //  Copyright © 2016 User. All rights reserved.
 //
 
+/*
+ //Future improvements that could be done on this:
+ -Fix formatting of cells so that the names of players are not clipped
+ -Add in a feature to allow users to also pick a rating before adding a new player to list
+ */
+
 #import "AppDelegate.h"
 #import "Player.h"
 #import "PlayersViewController.h"

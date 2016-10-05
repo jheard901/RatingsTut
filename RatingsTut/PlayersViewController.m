@@ -31,6 +31,26 @@
     
 }
 
+- (void)playerDetailsViewControllerDidCancel: (PlayerDetailsViewController*)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+/*
+- (void)playerDetailsViewControllerDidSave:(PlayerDetailsViewController*)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+*/
+
+-(void)playerDetailsViewController:(PlayerDetailsViewController *)controller didAddPlayer:(Player *)player
+{
+    [self.players addObject:player];
+    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:([self.players count] - 1) inSection:0];
+    [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];  //this could also be done simply with [self.tableView reloadData] but we opt to do it this way just to show an animation
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -54,7 +74,7 @@
 {
     switch(rating)
     {
-        case 1: return [UIImage imageNamed:@"1StarsSmall.png"];
+        case 1: return [UIImage imageNamed:@"1StarSmall.png"];
         case 2: return [UIImage imageNamed:@"2StarsSmall.png"];
         case 3: return [UIImage imageNamed:@"3StarsSmall.png"];
         case 4: return [UIImage imageNamed:@"4StarsSmall.png"];
@@ -140,5 +160,18 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+//prepareForSegue is called each time a segue takes place
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"AddPlayer"])
+    {
+        UINavigationController* navigationController = segue.destinationViewController;
+        PlayerDetailsViewController* playerDetailsViewController = [[navigationController viewControllers] objectAtIndex:0];
+        playerDetailsViewController.delegate = self;
+    }
+}
+
+
 
 @end

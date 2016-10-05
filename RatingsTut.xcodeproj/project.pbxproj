@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE328C3D1DA4A2E300314C57 /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE328C3C1DA4A2E300314C57 /* PlayerDetailsViewController.m */; };
+		CE328C401DA4C02C00314C57 /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE328C3F1DA4C02C00314C57 /* GamePickerViewController.m */; };
 		CE4B6A801D9F461E006F3077 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B6A7F1D9F461E006F3077 /* main.m */; };
 		CE4B6A831D9F461E006F3077 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B6A821D9F461E006F3077 /* AppDelegate.m */; };
 		CE4B6A861D9F461E006F3077 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4B6A851D9F461E006F3077 /* ViewController.m */; };
@@ -46,6 +48,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE328C3B1DA4A2E300314C57 /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
+		CE328C3C1DA4A2E300314C57 /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
+		CE328C3E1DA4C02C00314C57 /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
+		CE328C3F1DA4C02C00314C57 /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 		CE4B6A7B1D9F461E006F3077 /* RatingsTut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingsTut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE4B6A7F1D9F461E006F3077 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE4B6A811D9F461E006F3077 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +146,10 @@
 				CE4B6A871D9F461E006F3077 /* Main.storyboard */,
 				CEBD81571DA08E3200D995BC /* PlayersViewController.h */,
 				CEBD81581DA08E3200D995BC /* PlayersViewController.m */,
+				CE328C3B1DA4A2E300314C57 /* PlayerDetailsViewController.h */,
+				CE328C3C1DA4A2E300314C57 /* PlayerDetailsViewController.m */,
+				CE328C3E1DA4C02C00314C57 /* GamePickerViewController.h */,
+				CE328C3F1DA4C02C00314C57 /* GamePickerViewController.m */,
 				CEBD815A1DA08F5D00D995BC /* Player.h */,
 				CEBD815B1DA08F5D00D995BC /* Player.m */,
 				CE4B6A8D1D9F461E006F3077 /* Assets.xcassets */,
@@ -329,6 +339,8 @@
 			files = (
 				CE4B6A8C1D9F461E006F3077 /* RatingsTut.xcdatamodeld in Sources */,
 				CEBD816A1DA142E800D995BC /* PlayerCell.m in Sources */,
+				CE328C3D1DA4A2E300314C57 /* PlayerDetailsViewController.m in Sources */,
+				CE328C401DA4C02C00314C57 /* GamePickerViewController.m in Sources */,
 				CEBD81591DA08E3200D995BC /* PlayersViewController.m in Sources */,
 				CE4B6A861D9F461E006F3077 /* ViewController.m in Sources */,
 				CE4B6A831D9F461E006F3077 /* AppDelegate.m in Sources */,
